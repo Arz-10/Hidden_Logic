@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CTF Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🔐 CTF Login</h2>
+    <form onsubmit="return checkLogin();">
+      <label for="username">👤 Username</label>
+      <input type="text" id="username" placeholder="Enter username" required />
+
+      <label for="password">🔑 Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="result"></p>
+  </div>
+</body>
+</html>
